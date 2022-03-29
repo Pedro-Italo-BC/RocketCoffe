@@ -1,0 +1,141 @@
+:root {
+  --backgrond: #000;
+  --text-color: #fff;
+  --button: #8257e5;
+  --border: #29292e;
+  --border-menu-mobile: #a8a8b3;
+  --text-color-menu-mobile: #e1e1e6;
+}
+
+body,
+html {
+  width: 100%;
+  height: 100%;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Manrope', sans-serif;
+  font-family: 'Roboto', sans-serif;
+  color: var(--text-color);
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--backgrond);
+  background-image: url('../assets/blur-1.png'), url('../assets/blur-2.png');
+  background-repeat: no-repeat;
+  background-position: bottom left, top right;
+}
+
+a {
+  text-decoration: none;
+}
+
+.content {
+  width: 90%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+
+  height: 100%;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 90%;
+  padding: 0 6rem;
+  height: 150px;
+  margin-top: 50px;
+  padding-left: 14rem;
+}
+
+#logoImgM {
+  display: none;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  gap: 38px;
+  justify-content: center;
+}
+
+nav ul li a {
+  text-align: center;
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+nav ul li a:hover {
+  color: rgb(233, 102, 15);
+  transition: 0.3s all;
+}
+
+nav ul li a:active {
+  color: var(--button);
+  transition: 0.3s all;
+}
+
+.btnCoffee {
+  width: 172px;
+  height: 38px;
+  background-color: transparent;
+  border: 2px solid var(--button);
+  border-radius: 6px;
+  font-weight: 600;
+}
+.btnCoffee:hover {
+  box-shadow: inset 0px 0px 10px 3px var(--button);
+  transition: 0.3s;
+}
+
+.btnCoffee:active {
+  background-color: var(--button);
+  transition: 0.3s;
+}
+
+.hambuger {
+  display: none;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  height: 100%;
+  width: 100%;
+  max-width: 1200px;
+  flex-grow: 1;
+}
+
+.phrase {
+  display: none;
+}
+
+.mainTitle {
+  margin-top: 100px;
+}
+
+.mainTitle h1 {
+  font-size: 80px;
+  text-align: center;
+  font-weight: 700;
+}
+
+.mainTitle h1:last-child {
+  color: rgb(0, 0, 0);
+  text-shadow: -1px -1px 0 var(--button), 1px -1px 0 var(--button),
+    -1px 1px 0 var(--button), 1px 1px 0 var(--button);
+}
+
+main img {
+  height: 506px;
+}

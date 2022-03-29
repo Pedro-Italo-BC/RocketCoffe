@@ -1,0 +1,173 @@
+:root {
+  --backgrond: #000;
+  --text-color: #fff;
+  --button: #8257e5;
+  --border: #29292e;
+  --border-menu-mobile: #a8a8b3;
+  --text-color-menu-mobile: #e1e1e6;
+}
+
+body,
+html {
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Manrope', sans-serif;
+  font-family: 'Roboto', sans-serif;
+  color: var(--text-color);
+}
+
+@media (max-width: 1300px) {
+  header {
+    padding: 0;
+  }
+}
+@media (max-width: 900px) {
+  html,
+  body {
+    max-width: 900px;
+    min-height: 900px;
+    overflow-x: hidden;
+    background-image: url('../assets/blur-mobile.png');
+    background-position: center bottom;
+    background-size: 100%;
+    background-repeat: no-repeat;
+  }
+
+  header {
+    width: 100%;
+    border-bottom: var(--border) 1px solid;
+    align-items: center;
+    height: 100px;
+    min-height: 100px;
+    padding: 0 28px;
+    margin-top: 0;
+    margin-bottom: 90px;
+  }
+
+  #logoImgM {
+    display: inline;
+  }
+
+  #logoImgD {
+    display: none;
+  }
+
+  #navBar {
+    visibility: hidden;
+    overflow-y: hidden;
+    position: absolute;
+    top: 100px;
+    bottom: 0;
+    right: 0;
+    height: 0;
+    background-color: var(--backgrond);
+    width: 100%;
+    transition: 0.3s;
+  }
+  #navBar.active {
+    visibility: visible;
+    overflow-y: hidden;
+    height: calc(100% + 300px);
+  }
+
+  #navBar ul {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+  }
+
+  #navBar ul li {
+    border-bottom: var(--border) 1px solid;
+    height: 55px;
+    width: 100%;
+    padding: 0 0 0 10px;
+  }
+
+  #navBar ul li:hover {
+    border-left: inset 4px var(--button);
+  }
+
+  #navBar ul li:active {
+    border-left: inset 4px var(--button);
+  }
+
+  #navBar ul li a {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+  }
+
+  .content {
+    width: 100%;
+  }
+
+  .hambuger {
+    display: block;
+  }
+
+  #btnC1 {
+    display: none;
+  }
+
+  main {
+    width: 100%;
+    display: flex;
+  }
+
+  .phrase {
+    display: flex;
+    flex-direction: column;
+    gap: 87px;
+
+    align-items: center;
+  }
+
+  .phrase p {
+    font-size: 30px;
+    text-align: center;
+    font-weight: 700;
+  }
+
+  .mainTitle h1 {
+    font-size: 50px;
+  }
+
+  main > img {
+    height: 333px;
+  }
+}
+
+@media (max-width: 500px) {
+  .mainTitle h1 {
+    font-size: 60px;
+  }
+}
+
+@media (max-width: 400px) {
+  .mainTitle h1 {
+    font-size: 40px;
+  }
+  main > img {
+    height: 140px;
+  }
+  main > img {
+    height: 240px;
+  }
+}
+
+@media (max-width: 300px) {
+  main > img {
+    height: 140px;
+  }
+
+  main {
+    justify-content: start;
+    gap: 70px;
+  }
+}
